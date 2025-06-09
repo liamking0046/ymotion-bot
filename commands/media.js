@@ -211,4 +211,4 @@ module.exports = {
         fs.writeFileSync(inputPath, videoBuffer);
 
         exec(`ffmpeg -i ${inputPath} -ss 00:00:01.000 -vframes 1 ${outputPath}`, (err) => {
-          fs.unlinkSync(input
+          fs.unlinkSync(input);
